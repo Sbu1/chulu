@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilembe Group - Construction, Logistics & More</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">ILEMBE GROUP</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#divisions" class="nav-link">Divisions</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#construction">Construction</a></li>
+                        <li><a href="#logistics">Logistics</a></li>
+                        <li><a href="#outsourcing">Outsourcing & Recruitment</a></li>
+                        <li><a href="#port-operations">Port Operations</a></li>
+                        <li><a href="#training">Training & Development</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link admin-link" id="adminToggle">⚙️ Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background: linear-gradient(135deg, rgba(20,30,48,0.85), rgba(36,59,85,0.75)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80') center/cover;">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Construction Excellence</h1>
+                        <p class="hero-subtitle">Covering all aspects of construction and project management</p>
+                        <a href="#construction" class="btn btn-primary">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background: linear-gradient(135deg, rgba(183,28,28,0.85), rgba(136,14,79,0.75)), url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1920&q=80') center/cover;">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Logistics Solutions</h1>
+                        <p class="hero-subtitle">Seamless logistical support for the motor trade industry</p>
+                        <a href="#logistics" class="btn btn-primary">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background: linear-gradient(135deg, rgba(27,94,32,0.85), rgba(46,125,50,0.75)), url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1920&q=80') center/cover;">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Training & Development</h1>
+                        <p class="hero-subtitle">Empowering workforce through proper training and development</p>
+                        <a href="#training" class="btn btn-primary">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background: linear-gradient(135deg, rgba(230,81,0,0.85), rgba(245,124,0,0.75)), url('https://images.unsplash.com/photo-1566404791232-af9fe0ae8f8b?w=1920&q=80') center/cover;">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Port Operations</h1>
+                        <p class="hero-subtitle">Supplying labour to port operators and stevedores</p>
+                        <a href="#port-operations" class="btn btn-primary">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background: linear-gradient(135deg, rgba(13,71,161,0.85), rgba(21,101,192,0.75)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80') center/cover;">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Outsourcing & Recruitment</h1>
+                        <p class="hero-subtitle">The founding division since 2004</p>
+                        <a href="#outsourcing" class="btn btn-primary">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="slider-dots"></div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+        </div>
+    </section>
+
+    <!-- Divisions Section -->
+    <section class="divisions" id="divisions">
+        <div class="container">
+            <h2 class="section-title">Our Divisions</h2>
+            <div class="divisions-grid">
+                <div class="division-card" data-division="construction">
+                    <div class="card-icon">🏗️</div>
+                    <h3>Construction</h3>
+                    <p>Covering all aspects of construction and project management. No project is too big or too small.</p>
+                    <a href="#construction" class="card-link">Read More →</a>
+                </div>
+                <div class="division-card" data-division="logistics">
+                    <div class="card-icon">🚚</div>
+                    <h3>Logistics</h3>
+                    <p>Offering seamless logistical support to people involved in the motor trade industry.</p>
+                    <a href="#logistics" class="card-link">Read More →</a>
+                </div>
+                <div class="division-card" data-division="outsourcing">
+                    <div class="card-icon">👥</div>
+                    <h3>Outsourcing & Recruitment</h3>
+                    <p>Established in 2004, this was the founding division for the Ilembe Group.</p>
+                    <a href="#outsourcing" class="card-link">Read More →</a>
+                </div>
+                <div class="division-card" data-division="training">
+                    <div class="card-icon">📚</div>
+                    <h3>Training & Development</h3>
+                    <p>We believe in empowering our workforce through proper training and development.</p>
+                    <a href="#training" class="card-link">Read More →</a>
+                </div>
+                <div class="division-card" data-division="port">
+                    <div class="card-icon">⚓</div>
+                    <h3>Port Operations</h3>
+                    <p>Supplying labour to various port operators, stevedores, warehouses and shipping lines.</p>
+                    <a href="#port-operations" class="card-link">Read More →</a>
+                </div>
+                <div class="division-card" data-division="security">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Security</h3>
+                    <p>Professional security services ensuring safety and protection for your business.</p>
+                    <a href="#security" class="card-link">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>Ilembe Group</h3>
+                    <p>The Ilembe Group has grown from strength to strength and is a well respected business.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🚀</div>
+                    <h3>Mission</h3>
+                    <p>We pledge to offering professional, proactive service and to be our client's turnkey solutions.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">💎</div>
+                    <h3>Core Values</h3>
+                    <p>Ilembe serves with honesty, reliability, loyalty, integrity and goes beyond the call of duty.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">👁️</div>
+                    <h3>Vision</h3>
+                    <p>We tailor our services to suit our client's requirements, because we understand each client is unique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Projects Section -->
+    <section class="projects" id="construction">
+        <div class="container">
+            <h2 class="section-title">Construction Projects</h2>
+            <div class="division-intro">
+                <p>Covering all aspects of construction and project management. No project is too big or too small. We deliver excellence in every build.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, rgba(20,30,48,0.7), rgba(36,59,85,0.5)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80') center/cover;"></div>
+                    <div class="project-info">
+                        <h3>Bellair</h3>
+                        <p>Major construction project in Bellair area</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, rgba(20,30,48,0.7), rgba(36,59,85,0.5)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80') center/cover;"></div>
+                    <div class="project-info">
+                        <h3>Cato Manor</h3>
+                        <p>Community development project</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, rgba(20,30,48,0.7), rgba(36,59,85,0.5)), url('https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=800&q=80') center/cover;"></div>
+                    <div class="project-info">
+                        <h3>KwaMashu Hostels Ward 40</h3>
+                        <p>Hostel renovation and upgrade</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, rgba(20,30,48,0.7), rgba(36,59,85,0.5)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80') center/cover;"></div>
+                    <div class="project-info">
+                        <h3>Reservoir Hills</h3>
+                        <p>Residential construction project</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, rgba(20,30,48,0.7), rgba(36,59,85,0.5)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80') center/cover;"></div>
+                    <div class="project-info">
+                        <h3>Bridge City Housing</h3>
+                        <p>Large scale housing development</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, rgba(20,30,48,0.7), rgba(36,59,85,0.5)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80') center/cover;"></div>
+                    <div class="project-info">
+                        <h3>UKZN Student Accommodation</h3>
+                        <p>University student housing project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logistics Section -->
+    <section class="division-detail" id="logistics">
+        <div class="container">
+            <h2 class="section-title">Logistics</h2>
+            <div class="division-intro">
+                <p>Offering seamless logistical support to people involved in the motor trade industry. Our comprehensive logistics solutions ensure efficient transportation and delivery services.</p>
+            </div>
+            <div class="feature-image">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80" alt="Logistics Operations">
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚛</div>
+                    <h3>Fleet Management</h3>
+                    <p>Comprehensive fleet management services for the motor trade industry</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Warehousing</h3>
+                    <p>Secure storage and inventory management solutions</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗺️</div>
+                    <h3>Route Planning</h3>
+                    <p>Optimized delivery routes for maximum efficiency</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⏱️</div>
+                    <h3>Just-in-Time Delivery</h3>
+                    <p>Timely delivery services to meet your business needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outsourcing & Recruitment Section -->
+    <section class="division-detail alt-bg" id="outsourcing">
+        <div class="container">
+            <h2 class="section-title">Outsourcing & Recruitment</h2>
+            <div class="division-intro">
+                <p>Established in 2004, this was the founding division for the Ilembe Group. We provide comprehensive staffing solutions and recruitment services.</p>
+            </div>
+            <div class="feature-image">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80" alt="Recruitment Services">
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Talent Acquisition</h3>
+                    <p>Sourcing and recruiting top talent for your organization</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👔</div>
+                    <h3>Staff Outsourcing</h3>
+                    <p>Flexible staffing solutions for businesses of all sizes</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Contract Staffing</h3>
+                    <p>Short-term and long-term contract personnel</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>HR Consulting</h3>
+                    <p>Expert human resources guidance and support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Port Operations Section -->
+    <section class="division-detail" id="port-operations">
+        <div class="container">
+            <h2 class="section-title">Port Operations</h2>
+            <div class="division-intro">
+                <p>Supplying labour to various port operators, stevedores, warehouses and shipping lines. We ensure smooth and efficient port operations.</p>
+            </div>
+            <div class="feature-image">
+                <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80" alt="Port Operations">
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚓</div>
+                    <h3>Stevedoring Services</h3>
+                    <p>Professional loading and unloading of cargo vessels</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Cargo Handling</h3>
+                    <p>Expert handling of various cargo types and containers</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏭</div>
+                    <h3>Warehouse Operations</h3>
+                    <p>Efficient warehouse management and operations</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚢</div>
+                    <h3>Shipping Support</h3>
+                    <p>Comprehensive support services for shipping lines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Development Section -->
+    <section class="division-detail alt-bg" id="training">
+        <div class="container">
+            <h2 class="section-title">Training & Development</h2>
+            <div class="division-intro">
+                <p>We believe that we need to empower our workforce through proper training and development to provide them with the skills required for success.</p>
+            </div>
+            <div class="feature-image">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&q=80" alt="Training Programs">
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Skills Development</h3>
+                    <p>Comprehensive training programs for workforce enhancement</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Certification Programs</h3>
+                    <p>Industry-recognized certification and qualification programs</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Leadership Development</h3>
+                    <p>Building future leaders through targeted development programs</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Technical Training</h3>
+                    <p>Specialized technical skills training for various industries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="division-detail" id="security">
+        <div class="container">
+            <h2 class="section-title">Security Services</h2>
+            <div class="division-intro">
+                <p>Professional security services ensuring safety and protection for your business. We provide comprehensive security solutions tailored to your needs.</p>
+            </div>
+            <div class="feature-image">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80" alt="Security Services">
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>On-Site Security</h3>
+                    <p>Professional security personnel for your premises</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📹</div>
+                    <h3>Surveillance Systems</h3>
+                    <p>Advanced monitoring and CCTV solutions</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚨</div>
+                    <h3>Alarm Response</h3>
+                    <p>24/7 rapid response to security incidents</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔐</div>
+                    <h3>Access Control</h3>
+                    <p>Secure access management systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">Jan 2026</div>
+                    <h3>New Construction Project Launch</h3>
+                    <p>Ilembe Group announces major new development in the Durban area.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">Dec 2025</div>
+                    <h3>Excellence in Logistics Award</h3>
+                    <p>Recognized for outstanding service delivery in the logistics sector.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">Nov 2025</div>
+                    <h3>Training Program Expansion</h3>
+                    <p>New training initiatives launched to empower more workers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Ilembe Group based in Durban. Seven divisions, each giving specialised service to industry.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Durban, South Africa</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@ilembegroup.co.za</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+27 (0)31 XXX XXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-container">
+            <div class="login-header">
+                <h2>🔐 Admin Login</h2>
+                <button class="close-login" id="closeLogin">&times;</button>
+            </div>
+            <div class="login-content">
+                <p>Please enter your credentials to access the admin panel</p>
+                <div class="login-form">
+                    <div class="form-group">
+                        <label for="adminUsername">Username</label>
+                        <input type="text" id="adminUsername" placeholder="Enter username" class="admin-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPassword">Password</label>
+                        <input type="password" id="adminPassword" placeholder="Enter password" class="admin-input">
+                    </div>
+                    <div class="login-error" id="loginError"></div>
+                    <button class="btn btn-primary" id="loginBtn">Login</button>
+                    <button class="btn-text" id="logoutBtn" style="display: none;">Logout</button>
+                </div>
+                <div class="login-info">
+                    <small>💡 Default credentials:</small>
+                    <small>Username: <strong>admin</strong></small>
+                    <small>Password: <strong>ilembe2026</strong></small>
+                    <small style="margin-top: 10px; color: var(--accent-color);">⚠️ Change these credentials in the script!</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin CMS Panel -->
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-container">
+            <div class="admin-header">
+                <h2>⚙️ Content Management System</h2>
+                <button class="close-admin" id="closeAdmin">&times;</button>
+            </div>
+            
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="news">News</button>
+                <button class="admin-tab" data-tab="projects">Projects</button>
+                <button class="admin-tab" data-tab="services">Services</button>
+                <button class="admin-tab" data-tab="contact">Contact Info</button>
+                <button class="admin-tab" data-tab="security">Security</button>
+            </div>
+
+            <!-- News Management -->
+            <div class="admin-content active" id="news-content">
+                <h3>Manage News Articles</h3>
+                <div class="admin-form">
+                    <input type="text" id="newsTitle" placeholder="News Title" class="admin-input">
+                    <input type="text" id="newsDate" placeholder="Date (e.g., Feb 2026)" class="admin-input">
+                    <textarea id="newsDescription" placeholder="News Description" class="admin-textarea"></textarea>
+                    <button class="btn btn-primary" id="addNews">Add News</button>
+                </div>
+                <div class="admin-list" id="newsList"></div>
+            </div>
+
+            <!-- Projects Management -->
+            <div class="admin-content" id="projects-content">
+                <h3>Manage Construction Projects</h3>
+                <div class="admin-form">
+                    <input type="text" id="projectTitle" placeholder="Project Title" class="admin-input">
+                    <textarea id="projectDescription" placeholder="Project Description" class="admin-textarea"></textarea>
+                    <input type="text" id="projectImage" placeholder="Image URL (optional)" class="admin-input">
+                    <button class="btn btn-primary" id="addProject">Add Project</button>
+                </div>
+                <div class="admin-list" id="projectsList"></div>
+            </div>
+
+            <!-- Services Management -->
+            <div class="admin-content" id="services-content">
+                <h3>Manage Services</h3>
+                <div class="admin-form">
+                    <select id="serviceDivision" class="admin-input">
+                        <option value="">Select Division</option>
+                        <option value="logistics">Logistics</option>
+                        <option value="outsourcing">Outsourcing & Recruitment</option>
+                        <option value="port-operations">Port Operations</option>
+                        <option value="training">Training & Development</option>
+                        <option value="security">Security</option>
+                    </select>
+                    <input type="text" id="serviceIcon" placeholder="Service Icon (emoji)" class="admin-input">
+                    <input type="text" id="serviceTitle" placeholder="Service Title" class="admin-input">
+                    <textarea id="serviceDescription" placeholder="Service Description" class="admin-textarea"></textarea>
+                    <button class="btn btn-primary" id="addService">Add Service</button>
+                </div>
+                <div class="admin-list" id="servicesList"></div>
+            </div>
+
+            <!-- Contact Info Management -->
+            <div class="admin-content" id="contact-content">
+                <h3>Update Contact Information</h3>
+                <div class="admin-form">
+                    <input type="text" id="contactLocation" placeholder="Location" class="admin-input">
+                    <input type="email" id="contactEmail" placeholder="Email" class="admin-input">
+                    <input type="tel" id="contactPhone" placeholder="Phone" class="admin-input">
+                    <button class="btn btn-primary" id="updateContact">Update Contact Info</button>
+                </div>
+            </div>
+
+            <!-- Security Settings -->
+            <div class="admin-content" id="security-content">
+                <h3>🔐 Security Settings</h3>
+                <div class="security-warning">
+                    <strong>⚠️ Important:</strong> Keep your credentials safe and change them regularly. Never share your admin password with anyone.
+                </div>
+                <div class="admin-form">
+                    <h4>Change Username</h4>
+                    <input type="text" id="newUsername" placeholder="New Username" class="admin-input">
+                    <button class="btn btn-primary" id="changeUsername">Update Username</button>
+                </div>
+                <div class="admin-form">
+                    <h4>Change Password</h4>
+                    <input type="password" id="currentPassword" placeholder="Current Password" class="admin-input">
+                    <input type="password" id="newPassword" placeholder="New Password" class="admin-input">
+                    <input type="password" id="confirmPassword" placeholder="Confirm New Password" class="admin-input">
+                    <button class="btn btn-primary" id="changePassword">Update Password</button>
+                </div>
+                <div class="admin-form">
+                    <h4>Current Session</h4>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem;">You are currently logged in. Click below to logout.</p>
+                    <button class="btn btn-secondary" id="logoutBtnAdmin" style="background: var(--text-gray);">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>ILEMBE GROUP</h4>
+                    <p>Seven divisions, each giving specialised service to industry.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#divisions">Divisions</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Divisions</h4>
+                    <ul>
+                        <li><a href="#construction">Construction</a></li>
+                        <li><a href="#logistics">Logistics</a></li>
+                        <li><a href="#port-operations">Port Operations</a></li>
+                        <li><a href="#training">Training & Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p>Stay updated with our latest projects and news.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ilembe Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
